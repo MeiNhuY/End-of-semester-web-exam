@@ -81,17 +81,17 @@
                     <li>
                         <a href="gioithieu.html">GIỚI THIỆU</a>
                     </li> 
-                    <li>
-                        <a class="nav-link dropdown-toggle" href="D:\BaiTapHTML\HTML\WebHK2\Web_CuoiKi\cuahang.html" id="dropdown04" data-toggle="dropdown">CỬA HÀNG</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="cuahang.html" id="dropdown04">CỬA HÀNG</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="">Gấu bông handmade</a>
-                            <a class="dropdown-item" href="">Hoa kẽm nhung</a>
-                            <a class="dropdown-item" href="">Thiệp handmade</a>
-                            <a class="dropdown-item" href="">Gối len</a>
-                            <a class="dropdown-item" href="">Nến thơm</a>
-                            <a class="dropdown-item" href="">Túi</a>
+                            <a class="dropdown-item" href="#">Gấu bông handmade</a>
+                            <a class="dropdown-item" href="#">Hoa kẽm nhung</a>
+                            <a class="dropdown-item" href="#">Thiệp handmade</a>
+                            <a class="dropdown-item" href="#">Gối len</a>
+                            <a class="dropdown-item" href="#">Nến thơm</a>
+                            <a class="dropdown-item" href="#">Túi</a>
                         </div>
-                    </li> 
+                    </li>  
                     <li>
                         <a href="blog.html">BLOG</a>
                     </li> 
@@ -103,6 +103,35 @@
         </div>
     </header>
        
+    <!-- Javascript Cuahang-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.getElementById('dropdown04');
+    var dropdownMenu = dropdown.nextElementSibling;
+
+    dropdown.addEventListener('mouseover', function() {
+        dropdownMenu.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseout', function() {
+        setTimeout(function() {
+            if (!dropdownMenu.matches(':hover')) {
+                dropdownMenu.style.display = 'none';
+            }
+        }, 300);
+    });
+
+    dropdownMenu.addEventListener('mouseover', function() {
+        dropdownMenu.style.display = 'block';
+    });
+
+    dropdownMenu.addEventListener('mouseout', function() {
+        dropdownMenu.style.display = 'none';
+    });
+});
+    </script>
+
+
 
 <!-- SLIDER -->
         <div>
